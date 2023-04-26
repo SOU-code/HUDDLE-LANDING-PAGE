@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.attribution {
+    font-size: 2rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+/* -----------------------------------------Desktop View-------------------------------------------- */
+body{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    height: 100vh;
+}
+main{
+    margin: 5rem;
+}
+.logo{
+    margin-bottom: 6rem;
+}
+.main-section{
+    display: flex;
+}
+.content{
+    margin: 5rem;
+}
+.main-heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+.content-para{
+    color: rgba(255, 255, 255, 0.833);
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.btn a{
+    padding: 1rem 5rem;
+    background-color: white;
+    font-weight: 400;
+    border-radius: 2.5rem;
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+}
+.btn a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.social-logo ul{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+}
+.social-logo ul li{
+    margin: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid white;
+    color: white;
+    border-radius: 50%;
+}
+.social-logo ul li i{
+    padding: 0.8rem 0 0 1rem;
+    font-size: 2rem;
+}
+.social-logo ul li:hover{
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+/* -----------------------------------IPAD VIEW---------------------------------- */
+@media(max-width:1200px) and (min-width:600px){
+    html{
+        font-size: 50%;
+    }
+    main{
+        margin: 3rem;
+    }
+    .content{
+        margin: 2rem;
+    }
+    .logo img{
+        width: 25rem;
+    }
+    .main-img img{
+        width: 55rem;
+    }
+    .main-heading{
+        font-size: 1.6rem;
+    }
+}
+/* ---------------------------------Mobile View-------------------------------- */
+@media (max-width:599px) {
+    html{
+        font-size: 30%;
+    }
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        font-size: 2.5rem;
+    }
+    main{
+        margin: 3rem;
+    }
+    .logo img{
+        width: 50%;
+    }
+    .main-img img{
+        width: 100%;
+    }
+    .main-section{
+        display: block;
+        text-align: center;
+    }
+    .social-logo ul{
+        justify-content: center;
+    }
+
+}
